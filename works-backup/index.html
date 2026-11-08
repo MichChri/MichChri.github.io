@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>works backup</title><style>:root{--bg:#fbfaf7;--fg:#1d1d1b;--muted:#5d5d58;--rule:#e3e1da;--link:#1f4fbf}@media (prefers-color-scheme:dark){:root{--bg:#161615;--fg:#ecebe6;--muted:#a3a29b;--rule:#2f2f2c;--link:#8fb0ff}}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}main{max-width:44rem;margin:0 auto;padding:3rem 1rem 4rem}h1{font-size:1.9rem;line-height:1.2;margin:0 0 .4rem}h2{font-size:1.15rem;margin:2.2rem 0 .5rem}p,li{color:var(--fg)}.lede{color:var(--muted);margin:0 0 2rem}a{color:var(--link)}code{font-size:.92em}footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--rule);color:var(--muted);font-size:.9rem}ul{padding-left:1.2rem}</style></head>
+<body><main>
+<h1>works backup</h1>
+<p class="lede">A personal command-line tool that copies Michael Christianen's works library to his own Google Drive.</p>
+<h2>What it does</h2>
+<p>The works library is a local archive of songs, recordings, lyrics, videos and project material. <code>works backup</code> uploads that archive, one way, into a single folder in the owner's Google Drive, mirroring the folder layout of the library.</p>
+<ul>
+<li>It only <strong>adds</strong> files. It never deletes or overwrites anything in Google Drive.</li>
+<li>It checks every upload against the checksum Google Drive reports, without downloading the file again.</li>
+<li>It keeps a local record of what was uploaded: path, Drive file id and checksum.</li>
+</ul>
+<h2>Who uses it</h2>
+<p>Only its author. It is not a public service, it is not offered to other users, and it has no accounts of its own: it runs on the author's computer and signs in to the author's own Google account.</p>
+<h2>Google access</h2>
+<p>It asks Google for one permission, <code>drive.file</code>: access to the files this tool itself creates in Google Drive, and to no other files. It cannot see or read anything else in the Drive.</p>
+<p>See the <a href="privacy.html">privacy policy</a>.</p>
+<footer>Contact: <a href="https://github.com/MichChri">github.com/MichChri</a></footer>
+</main></body></html>
